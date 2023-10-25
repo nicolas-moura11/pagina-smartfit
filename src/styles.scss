@@ -1,3 +1,11 @@
+:root {
+    --dark-grey: #333333;
+    --light-grey: #808080;
+    --yellow: #FFB612;
+    --red: #dc0a17;
+    --green: #2FC022;
+}
+
 @font-face {
     font-family: "Gotham";
     src: url(assets/fonts/gotham/gotham-light.woff2) format('truetyppe');
@@ -12,3 +20,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gotham' ;
+    src: url(assets/fonts/gotham/gotham-bold.woff2) format('truetype');
+    font-weight: 700;
+    font-family: normal;
+}
+
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(assets/fonts/gotham/gotham-black.woff2) format('truetype');
+    font-weight: 900;
+    font-family: normal;
+}
