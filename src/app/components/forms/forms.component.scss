@@ -1,0 +1,64 @@
+.form-group{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    border: 0.3px solid rgb(197, 194, 194);
+    border-radius: 5px;
+}
+
+.form-group .form-icon{
+    font-size: 14px;
+    color: var(--light-gray);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-group .form-icon img{
+    height: 30px;
+}
+
+.form-group h3{
+    font-size: 24px;
+    color: rgb(103, 103, 103) ;
+    font-weight: 300;
+    margin-top: 28px;
+}
+
+.form-group .form-hour{
+    display: flex;
+    
+    border-top: rgb(222, 220, 220) solid 1px;
+    width: 100%;
+    flex-direction: row;
+    color:rgb(103, 103, 103);
+    padding:3px 4px;
+}
+
+.form-group .form-hour label{
+    display: flex;
+    justify-content:flex-start;
+    width: 100%;
+    margin: 10px;
+}
+
+.form-group .form-hour span{
+    display: flex;
+    justify-content: end;
+    
+    width: 100%;
+    margin: 10px;
+    
+}
+
+.form-group .form-hour:nth-last-child(2){ 
+    //especifica qual foi o elemento selecionado de baixo para cima
+    border-bottom:rgb(222, 220, 220) solid 1px; ;
+    margin-bottom: 28px;
+}

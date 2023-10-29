@@ -1,19 +1,15 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 100vw;
+    
     width: 100%;
     gap: 30px;
     margin: 0;
     padding: 0;
-    
 }
 
 header .logo-container{
@@ -57,8 +53,8 @@ header.text-container .heading{
     gap: 14px;
 }
 
-header .text-container .heading .heading-border {
+header .text-container .heading .heading-borde {
     height: 12px;
     width: 35%;
-    background-color:var(--dark-grey) ;
+    border-bottom: 2px solid #000; 
 }
