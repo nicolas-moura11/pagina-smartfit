@@ -57,8 +57,55 @@
     
 }
 
-.form-group .form-hour:nth-last-child(2){ 
+.form-group .form-hour:nth-last-child(3){ 
     //especifica qual foi o elemento selecionado de baixo para cima
     border-bottom:rgb(222, 220, 220) solid 1px; ;
     margin-bottom: 28px;
+}
+
+.form-group .btn-wrapper{
+    display: flex;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    
+}
+
+.form-group .btn-wrapper .btn{
+    font-size: 18px;
+    width: 25%;
+    border-radius: 5px ;
+    color: var(--light-gray);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px;
+    border: none;
+    cursor:;
+}
+
+.form-group .btn-wrapper .btn-primary{
+    background-color: var(--yellow);
+}
+
+.form-group .btn-wrapper .btn-secondary{
+    border: solid 1px rgb(190, 186, 186);
+    background: transparent;
+    
+}
+
+.form-group .checkbox-wrapper{
+    color: var(--light-gray);
+    margin: 24px 0;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+.form-group .checkbox-wrapper span{
+   right: 0;
+   position:absolute
+  
 }
