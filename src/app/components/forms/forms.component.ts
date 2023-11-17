@@ -61,12 +61,14 @@ export class FormsComponent implements OnInit{
   }
 
   filterUnits(unit: Location, open_hour: string, close_hour: string){
-    if(!unit.schedules) return true; //algumsa unidades não possuem schedule
+    if(!unit.schedules) return true; //algumas unidades não possuem schedule
 
     let open_hour_filter = parseInt(open_hour,10)
     let close_hour_filter = parseInt(close_hour, 10)
 
     let today_weekday = this.transformWeekday(new Date().getDay());
+
+
 
     for(let i = 0; i < unit.schedules.length; i++){
       let schedules_hour = unit.schedules[i].hour;
@@ -96,7 +98,7 @@ export class FormsComponent implements OnInit{
     }
     
 
-    if(!this.formGroup.value.hour){
+    if(this.formGroup.value.hour){
 
       const OPEN_HOURS = OPENING_HOURS[this.formGroup.value.hour as HOUR_INDEXES].first
       const CLOSE_HOUR = OPENING_HOURS[this.formGroup.value.hour as HOUR_INDEXES].last
@@ -105,9 +107,12 @@ export class FormsComponent implements OnInit{
     } else{
       this.filteredResults = intermediateResults
     }
+
+    
   }
 
   onClean() : void{
     console.log(this.formGroup.reset())
+    console.log("oi")  
   }
 }
