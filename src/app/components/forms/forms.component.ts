@@ -31,8 +31,8 @@ export class FormsComponent implements OnInit{
     });
   
     this.unitService.getAllUnits().subscribe(data => {
-      this.results = data.locations;
-      this.filteredResults = data.locations;
+      this.results = data;
+      this.filteredResults = data;
     });
   }
 
@@ -41,7 +41,7 @@ export class FormsComponent implements OnInit{
   onSubmit(): void{
    let {showClosed, hour} = this.formGroup.value
    this.filteredResults = this.filterUnitsServices.filter(this.results, showClosed, hour)
-    
+   this.unitService.setFilteredUnits(this.filteredResults);
   }
 
   onClean() : void{
