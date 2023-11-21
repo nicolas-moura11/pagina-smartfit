@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { UnitResponse } from '../types/units-response.interface';
-import { Location } from '/home/desktop/Documents/curso/pagina-smartfit/src/app/types/location.interface';
+import { Location } from 'src/app/types/location.interface';
 
 
 @Injectable({

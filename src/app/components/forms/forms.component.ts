@@ -1,4 +1,4 @@
-import { Location } from '/home/desktop/Documents/curso/pagina-smartfit/src/app/types/location.interface';
+import { Location } from 'src/app/types/location.interface';
 
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
