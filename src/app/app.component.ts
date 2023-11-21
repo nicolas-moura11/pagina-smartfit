@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pagina-smartfit';
+
+  onSubmit(){
+    console.log('chegou no app')
+  }
 }
+
+

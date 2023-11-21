@@ -17,5 +17,6 @@ export class CardsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.unitsList = this.unitService.getFilteredUnits();
+    console.log(this.unitsList);
   }
 }
