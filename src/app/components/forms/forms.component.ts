@@ -1,6 +1,6 @@
 import { Location } from '/home/desktop/Documents/curso/pagina-smartfit/src/app/types/location.interface';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { GetUnitsService } from 'src/app/services/get-units.service';
 import { FilterUnitsService } from 'src/app/services/filter-units.service';
@@ -15,6 +15,7 @@ import { FilterUnitsService } from 'src/app/services/filter-units.service';
   styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent implements OnInit{
+  @Output() submitEvent = new EventEmitter
   results: Location[] = [];
   filteredResults: Location[] = [];
   formGroup!: FormGroup;
@@ -42,6 +43,8 @@ export class FormsComponent implements OnInit{
    let {showClosed, hour} = this.formGroup.value
    this.filteredResults = this.filterUnitsServices.filter(this.results, showClosed, hour)
    this.unitService.setFilteredUnits(this.filteredResults);
+
+   this.submitEvent.emit();
   }
 
   onClean() : void{
