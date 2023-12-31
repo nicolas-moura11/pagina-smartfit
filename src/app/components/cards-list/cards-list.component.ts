@@ -13,7 +13,7 @@ export class CardsListComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.unitsList)
+   
   }
 
 }

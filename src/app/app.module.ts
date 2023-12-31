@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CardsListComponent } from './components/cards-list/cards-list.component';
 import { CommonModule } from '@angular/common';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -17,7 +18,8 @@ import { CommonModule } from '@angular/common';
     AppComponent,
     HeaderComponent,
     FormsComponent,
-    CardsListComponent
+    CardsListComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
